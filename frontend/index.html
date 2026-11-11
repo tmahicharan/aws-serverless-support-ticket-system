@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit and manage your customer support requests.">
+    <title>SupportHub | Customer Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="brand">
+            <span class="brand-icon">S</span>
+            <span>Support<span class="brand-highlight">Hub</span></span>
+        </a>
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            Support Center
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">CUSTOMER SUPPORT PORTAL</span>
+                <h1>How can we <span>help you?</span></h1>
+                <p>Have a question or facing an issue? Submit a support ticket and our team will get back to you.</p>
+                <div class="hero-features">
+                    <span>✓ Easy ticket submission</span>
+                    <span>✓ Email notifications</span>
+                    <span>✓ Dedicated support</span>
+                </div>
+            </div>
+            <div class="hero-illustration" aria-hidden="true">
+                <div class="illustration-circle">
+                    <div class="illustration-card">
+                        <span class="illustration-icon">✉</span>
+                        <span class="illustration-line long"></span>
+                        <span class="illustration-line"></span>
+                        <span class="illustration-check">✓</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-grid">
+
+            <div class="form-card">
+                <div class="card-heading">
+                    <div>
+                        <span class="section-label">GET IN TOUCH</span>
+                        <h2>Submit a Support Ticket</h2>
+                        <p>Fill in the details below to create your ticket.</p>
+                    </div>
+                    <span class="ticket-icon">✎</span>
+                </div>
+
+                <form id="ticketForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="text" id="name" name="name"
+                                placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" name="email"
+                                placeholder="you@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Ticket Subject <span>*</span></label>
+                        <input type="text" id="subject" name="subject"
+                            placeholder="Briefly describe your issue" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Issue Description <span>*</span></label>
+                        <textarea id="description" name="description" rows="5"
+                            placeholder="Explain your issue in detail..." required></textarea>
+                    </div>
+
+                    <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+
+                    <button type="submit" id="submitBtn" class="submit-btn">
+                        <span id="buttonText">Submit Ticket</span>
+                        <span aria-hidden="true">→</span>
+                    </button>
+
+                    <p class="privacy-note">Your information is securely submitted to our support system.</p>
+                </form>
+            </div>
+
+            <aside class="info-panel">
+                <div class="info-card">
+                    <span class="info-icon">◷</span>
+                    <h3>Quick Assistance</h3>
+                    <p>Submit your issue anytime. Our support workflow will process your request.</p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">✉</span>
+                    <h3>Email Updates</h3>
+                    <p>Receive a notification when your support ticket is processed.</p>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">✓</span>
+                    <h3>Reliable Support</h3>
+                    <p>Your ticket details are stored securely for our support team.</p>
+                </div>
+
+                <div class="help-box">
+                    <h3>Need help?</h3>
+                    <p>Complete the form and submit your request. Our system will take care of the rest.</p>
+                </div>
+            </aside>
+
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 SupportHub. All rights reserved.</p>
+            <span>Powered by AWS Serverless Architecture</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
